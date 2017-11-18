@@ -1,0 +1,602 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  13 SEP 2017 11:29
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**MAT344_F17_Quiz1_VerC.tex
+(./MAT344_F17_Quiz1_VerC.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2016/05/14 v2.6a Micro-typographical refinements (RS)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+\MT@toks=\toks16
+\MT@count=\count87
+LaTeX Info: Redefining \textls on input line 774.
+\MT@outer@kern=\dimen103
+LaTeX Info: Redefining \textmicrotypecontext on input line 1310.
+\MT@listname@count=\count88
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2016/05/14 v2.6a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 916.
+LaTeX Info: Redefining \lslig on input line 916.
+\MT@outer@space=\skip43
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2016/05/14 v2.6a microtype main configuration file (RS)
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/mathpazo.sty
+Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup6
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/eulervm/eulervm.sty
+Package: eulervm 2005/01/11 v4.0 (WaS)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/ntheorem/ntheorem.sty
+Style `ntheorem', Version 1.33 <2011/08/15>
+Package: ntheorem 2011/08/15 1.33
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\theorem@style=\toks17
+\theorem@@style=\toks18
+\theorembodyfont=\toks19
+\theoremnumbering=\toks20
+\theorempreskipamount=\skip44
+\theorempostskipamount=\skip45
+\theoremframepreskipamount=\skip46
+\theoremframepostskipamount=\skip47
+\theoreminframepreskipamount=\skip48
+\theoreminframepostskipamount=\skip49
+\theorem@preskip=\toks21
+\theorem@postskip=\toks22
+\theorem@framepreskip=\toks23
+\theorem@framepostskip=\toks24
+\theorem@inframepreskip=\toks25
+\theorem@inframepostskip=\toks26
+\theoremindent=\dimen104
+\theorem@indent=\dimen105
+\theoremrightindent=\dimen106
+\theorem@rightindent=\dimen107
+\theoremheaderfont=\toks27
+\theoremseparator=\toks28
+\theoremprework=\toks29
+\theorempostwork=\toks30
+\theoremsymbol=\toks31
+\qedsymbol=\toks32
+\theoremkeyword=\toks33
+\qedsymbol=\toks34
+\thm@topsep=\skip50
+\thm@topsepadd=\skip51
+)
+\c@ex=\count89
+\c@exam=\count90
+\c@fact=\count91
+\c@defn=\count92
+\c@thm=\count93
+\c@quest=\count94
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/10 v2.15b AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks35
+\ex@=\dimen108
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen109
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count95
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count96
+\leftroot@=\count97
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count98
+\DOTSCASE@=\count99
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen110
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
+\dotsspace@=\muskip10
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
+\tag@help=\toks36
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
+\andhelp@=\toks37
+\eqnshift@=\dimen111
+\alignsep@=\dimen112
+\tagshift@=\dimen113
+\tagwidth@=\dimen114
+\totwidth@=\dimen115
+\lineht@=\dimen116
+\@envbody=\toks38
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks39
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 96.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count107
+))
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
+\c@tracingmulticols=\count108
+\mult@box=\box28
+\multicol@leftmargin=\dimen119
+\c@unbalance=\count109
+\c@collectmore=\count110
+\doublecol@number=\count111
+\multicoltolerance=\count112
+\multicolpretolerance=\count113
+\full@width=\dimen120
+\page@free=\dimen121
+\premulticols=\dimen122
+\postmulticols=\dimen123
+\multicolsep=\skip55
+\multicolbaselineskip=\skip56
+\partial@page=\box29
+\last@line=\box30
+\maxbalancingoverflow=\dimen124
+\mult@rightbox=\box31
+\mult@grightbox=\box32
+\mult@gfirstbox=\box33
+\mult@firstbox=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\c@columnbadness=\count114
+\c@finalcolumnbadness=\count115
+\last@try=\dimen125
+\multicolovershoot=\dimen126
+\multicolundershoot=\dimen127
+\mult@nat@firstbox=\box52
+\colbreak@box=\box53
+\mc@col@check@num=\count116
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks40
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/vwcol/vwcol.sty
+Package: vwcol 2015/02/10 v0.2 Variable-width multicolumn text
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count117
+\calc@Bcount=\count118
+\calc@Adimen=\dimen128
+\calc@Bdimen=\dimen129
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count119
+\calc@Cskip=\skip59
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/05/09 v1.1c Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 144.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip60
+\RaggedLeftLeftskip=\skip61
+\RaggedRightLeftskip=\skip62
+\CenteringRightskip=\skip63
+\RaggedLeftRightskip=\skip64
+\RaggedRightRightskip=\skip65
+\CenteringParfillskip=\skip66
+\RaggedLeftParfillskip=\skip67
+\RaggedRightParfillskip=\skip68
+\JustifyingParfillskip=\skip69
+\CenteringParindent=\skip70
+\RaggedLeftParindent=\skip71
+\RaggedRightParindent=\skip72
+\JustifyingParindent=\skip73
+)
+\vwcol@sep=\skip74
+\vwcol@rule=\skip75
+\vwcol@totalwidth=\skip76
+\vwcol@averagewidth=\skip77
+\vwcol@parindent=\skip78
+\vwcol@last=\count120
+\vwcol@Ncols=\count121
+\vwcol@Nlines=\count122
+\vwcol@maxrecursion=\count123
+\vwcol@box=\box54
+\vwcol@plainbox=\box55
+\vwcol@outputbox=\box56
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip79
+\f@ncyO@elh=\skip80
+\f@ncyO@erh=\skip81
+\f@ncyO@olh=\skip82
+\f@ncyO@orh=\skip83
+\f@ncyO@elf=\skip84
+\f@ncyO@erf=\skip85
+\f@ncyO@olf=\skip86
+\f@ncyO@orf=\skip87
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/preprint/fullpage.sty
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip88
+)
+(./MAT344_F17_Quiz1_VerC.aux)
+\openout1 = `MAT344_F17_Quiz1_VerC.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Try loading font information for T1+pplj on input line 87.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1pplj.fd
+File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
+)
+LaTeX Info: Redefining \microtypecontext on input line 87.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: Tracking enabled.
+Package microtype Info: Using default tracking set `smallcaps'.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-ppl.cfg
+File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count124
+\scratchdimen=\dimen130
+\scratchbox=\box57
+\nofMPsegments=\count125
+\nofMParguments=\count126
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count127
+\MPscratchDim=\dimen131
+\MPnumerator=\count128
+\makeMPintoPDFobject=\count129
+\everyMPtoPDFconversion=\toks42
+) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 87.
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 87.
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 90.
+LaTeX Font Info:    Try loading font information for U+zeur on input line 92.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/eulervm/uzeur.fd
+File: uzeur.fd 2005/01/11 v4.0 (WaS)
+)
+LaTeX Font Info:    Font shape `U/zeur/m/n' will be
+(Font)              scaled to size 11.39996pt on input line 92.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-eur.cfg
+File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
+)
+LaTeX Font Info:    Font shape `U/zeur/m/n' will be
+(Font)              scaled to size 8.54997pt on input line 92.
+LaTeX Font Info:    Font shape `U/zeur/m/n' will be
+(Font)              scaled to size 6.64998pt on input line 92.
+LaTeX Font Info:    Try loading font information for U+zeus on input line 92.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/eulervm/uzeus.fd
+File: uzeus.fd 2005/01/11 v4.0 (WaS)
+)
+LaTeX Font Info:    Font shape `U/zeus/m/n' will be
+(Font)              scaled to size 11.39996pt on input line 92.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-eus.cfg
+File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
+)
+LaTeX Font Info:    Font shape `U/zeus/m/n' will be
+(Font)              scaled to size 8.54997pt on input line 92.
+LaTeX Font Info:    Font shape `U/zeus/m/n' will be
+(Font)              scaled to size 6.64998pt on input line 92.
+LaTeX Font Info:    Try loading font information for U+zeuex on input line 92.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/eulervm/uzeuex.fd
+File: uzeuex.fd 2005/01/11 v4.0 (WaS)
+)
+LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
+(Font)              scaled to size 11.39996pt on input line 92.
+LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
+(Font)              scaled to size 8.54997pt on input line 92.
+LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
+(Font)              scaled to size 6.64998pt on input line 92.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 11.39996pt on input line 92.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 8.54997pt on input line 92.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.64998pt on input line 92.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 11.39996pt on input line 92.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 8.54997pt on input line 92.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.64998pt on input line 92.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 92.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `zplm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 96.
+LaTeX Font Info:    Font shape `T1/pplj/bx/it' in size <10> not available
+(Font)              Font shape `T1/pplj/b/it' tried instead on input line 105.
+LaTeX Font Info:    Font shape `U/zeur/m/n' will be
+(Font)              scaled to size 9.49997pt on input line 111.
+LaTeX Font Info:    Font shape `U/zeur/m/n' will be
+(Font)              scaled to size 7.21997pt on input line 111.
+LaTeX Font Info:    Font shape `U/zeur/m/n' will be
+(Font)              scaled to size 5.69998pt on input line 111.
+LaTeX Font Info:    Font shape `U/zeus/m/n' will be
+(Font)              scaled to size 9.49997pt on input line 111.
+LaTeX Font Info:    Font shape `U/zeus/m/n' will be
+(Font)              scaled to size 7.21997pt on input line 111.
+LaTeX Font Info:    Font shape `U/zeus/m/n' will be
+(Font)              scaled to size 5.69998pt on input line 111.
+LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
+(Font)              scaled to size 9.49997pt on input line 111.
+LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
+(Font)              scaled to size 7.21997pt on input line 111.
+LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
+(Font)              scaled to size 5.69998pt on input line 111.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.49997pt on input line 111.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.21997pt on input line 111.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.69998pt on input line 111.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.49997pt on input line 111.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.21997pt on input line 111.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.69998pt on input line 111.
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--112
+
+ []
+
+LaTeX Font Info:    Try loading font information for U+fplmbb on input line 127
+.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ufplmbb.fd
+File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
+)
+\tf@thm=\write3
+\openout3 = `MAT344_F17_Quiz1_VerC.thm'.
+
+
+
+AED: lastpage setting LastPage
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 18.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+(./MAT344_F17_Quiz1_VerC.aux) ) 
+Here is how much of TeX's memory you used:
+ 5272 strings out of 493014
+ 79957 string characters out of 6133351
+ 173119 words of memory out of 5000000
+ 8559 multiletter control sequences out of 15000+600000
+ 67139 words of font info for 151 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 38i,11n,43p,510b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dv
+ips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
+euler/eufm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfont
+s/euler/eurm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
+nts/euler/eusm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/mat
+hpazo/fplmbb.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/fpl/fpl
+rc8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbol
+s/msam10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8
+a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on MAT344_F17_Quiz1_VerC.pdf (1 page, 92625 bytes).
+PDF statistics:
+ 53 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 44033 words of extra memory for PDF output out of 51595 (max. 10000000)
+

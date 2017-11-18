@@ -1,0 +1,144 @@
+%%%%%%%%%%%%
+%The nice Euler/mathpazo font setup is from http://tex.stackexchange.com/questions/59702/suggest-a-nice-font-family-for-my-basic-latex-template-text-and-math/97128#97128
+%%%%%%%%%%%%
+\documentclass[twoside]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[tracking]{microtype}
+\usepackage[sc,osf]{mathpazo}   % With old-style figures and real smallcaps.
+\usepackage{cancel} %for \cancel (strikethrough)
+\linespread{1.1}              % Palatino needs a little more leading
+% Euler for math and numbers
+\usepackage[euler-digits,small]{eulervm}
+%\AtBeginDocument{\renewcommand{\hbar}{\hslash}} not sure what this is for
+
+\usepackage{ntheorem} %new theorem
+% A new theorem style to make theorem description non-italic, to match the Euler math font.
+\makeatletter
+\newtheoremstyle{mystyle}
+   {\item[\hskip\labelsep \theorem@headerfont ##1\ ##2\theorem@separator]}% 
+   {\item[\hskip\labelsep \theorem@headerfont ##1\ ##2\ \textit{(##3)}\theorem@separator]}
+\makeatother
+\theoremstyle{mystyle}
+\theoremheaderfont{\scshape}
+\theorembodyfont{\upshape}
+\newtheorem{ex}{Exercise}
+\newtheorem{exam}{Example}
+\newtheorem{fact}{Fact}
+\newtheorem{defn}{Definition}
+\newtheorem{thm}{Theorem}
+\newtheorem{quest}{Question}
+
+%%%%%%%%%
+%BEGIN SYMBOL MACROS
+%%%%%%%%%
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\renewcommand{\H}{\mathcal{H}}
+\newcommand{\I}{\mathcal{I}}
+\newcommand{\K}{\mathcal{K}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\N}{\mathcal{N}}
+\let\nothing\O
+\renewcommand{\O}{\mathcal{O}}
+\renewcommand{\P}{\mathcal{P}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\R}{\mathcal{R}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\V}{\mathcal{V}}
+\newcommand{\W}{\mathcal{W}}
+\newcommand{\Z}{\mathcal{Z}}
+
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\KK}{\mathbb{K}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+%%%%%%%%%
+%END SYMBOL MACROS
+%%%%%%%%%
+
+\usepackage{amsmath}
+%\usepackage{hyperref} this was causing trouble - maybe it needs to be above/below a particular "\usepackage" statement...
+\usepackage{graphicx} %For \includegraphics
+\usepackage{multicol} %For \begin{multicols}{2}etc
+\usepackage{enumerate} %For \begin{enumerate}[(a)] etc.
+\usepackage{vwcol} %For \begin{vwcol}[widths={0.6,0.4}, sep=.8cm, justify=flush,rule=0pt,indent=1em]
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\lhead{\large \sc{Mat344}}
+\chead{\Large \textbf{\sc{Quiz 1, TUT102}}}
+\rhead{Sept 13th, 2017}
+\cfoot{}
+%\lfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+%\rfoot{\texttt{www.math.toronto.edu/rennetad}}
+
+\usepackage[myheadings]{fullpage}
+
+\pagestyle{fancyplain}
+\begin{document}
+
+\begin{center}
+\section*{\sc{5 Points Available}}
+\vspace{0.1in}
+\large \underline{\textsc{Instructions}}
+\vspace{0.1in}
+\normalsize
+
+Please write your \textbf{Name and Student Number} at the top of this page.\\
+
+\textbf{Remember:} you have to write quizzes in your \textbf{registered} tutorial.
+\vspace{0.1in}
+\end{center}
+
+
+\begin{center}
+%\subsection*{\sc{\underline{Questions}}}
+\textit{Make sure to show as many steps of your work as possible, justify as much and annotate any interesting steps or features of your work.  \textbf{Do not just give the final answer.}} \\
+%\vspace{0.1in}
+%\textbf{Where possible, use - but do not simplify - terms like "$P(n,r)$", "$\binom{n}{k}$",  "$P(n;r_1,...,r_k)$" etc.}
+\end{center}
+
+\begin{quest}\mbox{}
+In a room there are 10 people, all between the ages of 1 and 102 (possibly including 1 and/or 102).  Prove that we can always find two subsets $A$ and $B$ of these 10 people so that the sum of the ages of people in $A$ is equal to the sum of the ages of people in $B$.\\
+
+\textit{Hint: how many non-empty subsets are there from the 10 people?}
+\end{quest}
+
+%There are 1024-1 = 1023.  The maximum sum of a subset is 1020 (with all 10 people all having age 102).  There are therefore, no more than 1020 different sums of ages from a subset.  So at least two subsets have the same sum by the pigeon-hole principle.  Note: we could improve this to say that the sets can be chosen to be disjoint.  To accomplish this, take a solution to the easier problem, and simply remove any people in common between the sets.  The remaining two sets will still have to have the same sum of ages!
+\vspace{20pt}
+
+\begin{enumerate}
+\item[{\bfseries Solution:}]
+
+First we point out, implicit in the statement of the problem, that the subsets are such that $A \ne B$ and $A, B \ne \varnothing$, otherwise the problem is trivial. Notice also that the sets $A$ and $B$ need not be disjoint, although we could impose this condition if we wanted to.\\
+
+Now we have that there are $2^{10} = 1024$ distinct subsets of the 10 people. Since one of these subsets is the empty set (and we would like non-empty subsets, $A$ and $B$), there are $1024 - 1  = 1023$ \emph{non-empty} subsets of the 10 people. \\
+
+Also, the sum of the ages for each subset of people is in the range $\{1, 2, \ldots, 1019, 1020\}$; the smallest possible sum coming from a set of one person whose age is 1; the largest possible sum coming from a set containing all 10 people who each are 102 years old. \\
+
+Let the number of non-empty subsets (1023) be the pigeons, and let the number of possible sums (1020) be the holes, by the PHP there is at least one hole with two pigeons, that is, at least two of the subsets of people have equal sums of ages, as desired.
+
+\begin{enumerate}
+
+\item[{\bfseries Aside:}] If we have that $A \cap B \ne \varnothing$, we can just remove all the people in the intersection, and the sums of the ages of the remaining people in the two respective sets will still be the same, yielding \emph{disjoint} subsets. 
+
+\end{enumerate}
+\end{enumerate}
+\end{document}
+
+
+
+
+
+
+

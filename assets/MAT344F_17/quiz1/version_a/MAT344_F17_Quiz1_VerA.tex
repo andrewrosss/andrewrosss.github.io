@@ -1,0 +1,141 @@
+%%%%%%%%%%%%
+%The nice Euler/mathpazo font setup is from http://tex.stackexchange.com/questions/59702/suggest-a-nice-font-family-for-my-basic-latex-template-text-and-math/97128#97128
+%%%%%%%%%%%%
+\documentclass[twoside]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsfonts}
+\usepackage[tracking]{microtype}
+\usepackage{amssymb}
+\usepackage[sc,osf]{mathpazo}   % With old-style figures and real smallcaps.
+\usepackage{cancel} %for \cancel (strikethrough)
+\linespread{1.1}              % Palatino needs a little more leading
+% Euler for math and numbers
+\usepackage[euler-digits,small]{eulervm}
+%\AtBeginDocument{\renewcommand{\hbar}{\hslash}} not sure what this is for
+
+\usepackage{ntheorem} %new theorem
+% A new theorem style to make theorem description non-italic, to match the Euler math font.
+\makeatletter
+\newtheoremstyle{mystyle}
+   {\item[\hskip\labelsep \theorem@headerfont ##1\ ##2\theorem@separator]}% 
+   {\item[\hskip\labelsep \theorem@headerfont ##1\ ##2\ \textit{(##3)}\theorem@separator]}
+\makeatother
+\theoremstyle{mystyle}
+\theoremheaderfont{\scshape}
+\theorembodyfont{\upshape}
+\newtheorem{ex}{Exercise}
+\newtheorem{exam}{Example}
+\newtheorem{fact}{Fact}
+\newtheorem{defn}{Definition}
+\newtheorem{thm}{Theorem}
+\newtheorem{quest}{Question}
+
+%%%%%%%%%
+%BEGIN SYMBOL MACROS
+%%%%%%%%%
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\renewcommand{\H}{\mathcal{H}}
+\newcommand{\I}{\mathcal{I}}
+\newcommand{\K}{\mathcal{K}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\N}{\mathcal{N}}
+\let\nothing\O
+\renewcommand{\O}{\mathcal{O}}
+\renewcommand{\P}{\mathcal{P}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\R}{\mathcal{R}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\V}{\mathcal{V}}
+\newcommand{\W}{\mathcal{W}}
+\newcommand{\Z}{\mathcal{Z}}
+
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\KK}{\mathbb{K}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+%%%%%%%%%
+%END SYMBOL MACROS
+%%%%%%%%%
+
+\usepackage{amsmath}
+%\usepackage{hyperref} this was causing trouble - maybe it needs to be above/below a particular "\usepackage" statement...
+\usepackage{graphicx} %For \includegraphics
+\usepackage{multicol} %For \begin{multicols}{2}etc
+\usepackage{enumerate} %For \begin{enumerate}[(a)] etc.
+\usepackage{vwcol} %For \begin{vwcol}[widths={0.6,0.4}, sep=.8cm, justify=flush,rule=0pt,indent=1em]
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\lhead{\large \sc{Mat344}}
+\chead{\Large \textbf{\sc{Quiz 1, TUT101}}}
+\rhead{Sept 13th, 2017}
+\cfoot{}
+%\lfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+%\rfoot{\texttt{www.math.toronto.edu/rennetad}}
+
+\usepackage[myheadings]{fullpage}
+
+\pagestyle{fancyplain}
+\begin{document}
+
+\begin{center}
+\section*{\sc{5 Points Available}}
+\vspace{0.1in}
+\large \underline{\textsc{Instructions}}
+\vspace{0.1in}
+\normalsize
+
+Please write your \textbf{Name and Student Number} at the top of this page.\\
+
+\textbf{Remember:} you have to write quizzes in your \textbf{registered} tutorial.
+\vspace{0.1in}
+\end{center}
+
+
+\begin{center}
+%\subsection*{\sc{\underline{Questions}}}
+\textit{Make sure to show as many steps of your work as possible, justify as much and annotate any interesting steps or features of your work.  \textbf{Do not just give the final answer.}} \\
+%\vspace{0.1in}
+%\textbf{Where possible, use - but do not simplify - terms like "$P(n,r)$", "$\binom{n}{k}$",  "$P(n;r_1,...,r_k)$" etc.}
+\end{center}
+
+\begin{quest} \mbox{}
+Prove that there is a positive integer $n$ so that $117^n - 1$ is divisible by 11. (Note: $117 = 3^2\cdot 13$.)\\
+
+\textit{Hint: consider the remainders (mod 11) of the numbers $117-1, 117^2-1, 117^3-1,...,117^{11}-1$.}
+\end{quest}
+%There are 10 distinct remainders modulo 11.  So, two numbers in the above list have the same remainder modulo 11.  i.e. for some $i<j$ we have $117^j - 1, 117^i-1 \equiv r (mod 11)$.  Taking their difference, we get $(117^j - 1) - (117^i - 1) = 117^i(117^{j-i}-1)$.  But the left-hand side is equal to $r - r=0$ modulo 11.  So, $7\mid 117^i(117^{j-i}-1)$.  But $7 \nmid 117$, so it must be that $7 \mid 117^{j-i}-1$, proving our claim.
+\vspace{20pt}
+
+\begin{enumerate}
+\item[{\bfseries Solution:}] 
+
+If we have $117^i - 1 \mod 11 \equiv 0$ for some $1 \le i \le 11$ then we are done. 
+
+Suppose for contradiction we have $117^i -1 \mod 11 \in \{1, 2, \ldots, 10\}$, for all $1 \le i \le 11$. In this case, letting the residues of the numbers $117-1, 117^2-1,...,117^{11}-1$ be the pigeons, and letting the numbers $1, 2, \ldots, 10$ be the holes, we have 11 pigeons and 10 holes, therefore by the PHP one of the holes must contain at least two pigeons, that is, we must have that 
+
+\[117^i - 1 \equiv 117^j - 1 \mod 11 \qquad \text{for some $1 \le i < j \le 11$}\]
+
+Taking the difference gives 
+
+\[(117^j - 1) - (117^i - 1) = 117^i(117^{j-i}-1) \equiv 0 \mod 11\]
+
+This implies $11 \mid 117^i(117^{j-i}-1)$. Since $117 = 3^2\cdot 13$, we have that $11 \nmid 117$, thus it must be the case that $11 \mid 117^{j-i}-1$, contradicting the initial assumption that $117^i -1 \mod 11 \in \{1, 2, \ldots, 10\}$, for all $1 \le i \le 11$. 
+
+\end{enumerate}
+
+
+
+
+%It ends up being 117^{10}-1, by the way!
+  
+\end{document}
