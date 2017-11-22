@@ -2,7 +2,8 @@
 	
 	'use strict';
 
-
+	// var ua = navigator.userAgent,
+	// 	isMobileWebkit = 
 
 	// iPad and iPod detection	
 	var isiPad = function(){
