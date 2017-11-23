@@ -209,8 +209,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 768px) {
   .fh5co-hero, .fh5co-parallax {
-    /*height: auto;*/
     background-attachment: scroll;
+    text-align:center;
     padding: 2em 0 /*4em*/;
   }
 }
@@ -526,10 +526,21 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(0, 0, 0, 0.4);
 }
 
+#head_shot {
+  transform: translate(0%,20%);
+}
+
+@media screen and (max-width: 768px) {
+  #head_shot {
+    transform: translate(0%,0%);
+  }
+}
+
 #map {
   width: 100%;
   height: 700px;
 }
+
 @media screen and (max-width: 768px) {
   #map {
     height: 200px;
