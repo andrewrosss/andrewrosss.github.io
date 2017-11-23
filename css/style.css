@@ -210,6 +210,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   .fh5co-hero, .fh5co-parallax {
     /*height: auto;*/
+    background-attachment: scroll;
     padding: 2em 0 /*4em*/;
   }
 }
