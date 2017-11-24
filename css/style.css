@@ -207,6 +207,18 @@ h1, h2, h3, h4, h5, h6 {
   opacity: .2;
 }
 
+.fh5co-hero .overlay_courses{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  opacity: .4;
+}
+
+
+
 @media screen and (max-width: 768px) {
   .fh5co-hero, .fh5co-parallax {
     background-attachment: scroll;
@@ -526,6 +538,10 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(0, 0, 0, 0.4);
 }
 
+figure figcaption {
+    text-align: center;
+}
+
 #head_shot {
   transform: translate(0%,20%);
 }
@@ -534,6 +550,10 @@ h1, h2, h3, h4, h5, h6 {
   #head_shot {
     transform: translate(0%,0%);
   }
+}
+
+ul#projects_menu li {
+    display:inline;
 }
 
 #map {

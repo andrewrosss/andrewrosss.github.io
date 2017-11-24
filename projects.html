@@ -81,8 +81,9 @@
 		</header>
 
 		<!-- TEXT ON IMAGE -->
-		<div class="fh5co-hero" style="background-image: url(images/hero_2.jpg);" data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
+		<div class="fh5co-hero" style="background-image: url(images/graph.jpg);background-position: center;">
+			<!-- data-stellar-background-ratio="0.5" -->
+			<!-- <div class="overlay"></div> -->
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-push-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
@@ -94,23 +95,109 @@
 					</div>
 				</div>
 			</div>
+			<!-- BOOKMARKS - if there are enough projects -->
+			<!-- <div class="container">
+				<ul id="projects_menu" style="text-align:center;">
+					<li><a href="index.html"><span>Home</span></a></li>
+					<li><a href="services.html"><span>Projects</span></a></li>
+					<li><a href="teaching.html"><span>Teaching</span></a></li>
+					<li><a href="about.html"><span>About</span></a></li>
+					<li><a href="contact.html"><span>Contact</span></a></li>
+				</ul>
+			</div> -->
 		</div>
 
 		<!-- PROJECT DISCRIPTION and LINK -->
 		<div class="fh5co-section">
 			<div class="container">
+				<!-- PROJECT -->
 				<div class="row">
-					<div class="col-md-5">
-						<h2>E Commerce</h2>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. </p>
-						<ul class="fh5co-check">
-							<li>Web Design</li>
-							<li>User Experience</li>
-							<li>User Interface</li>
-							<li>Search Engine Optimization</li>
+					<div class="col-sm-12 col-md-6">
+						<h2>Oracle &mdash; Mark Prediction Web App</h2>
+						<p>(IN PROGRESS)</p>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<img src="images/hero_1.jpg" alt="Free HTML5 by FreeHTML5.co" class="img-responsive">
+					</div>
+				</div>
+				<br>
+				<!-- PORJECT -->
+				<div class="row">
+					<div class="col-md-6">
+						<h2>Capsule Neural Network</h2>
+						<p>(IN PROGRESS)</p>
+					</div>
+					<div class="col-md-6">
+						<img src="images/hero_1.jpg" alt="Free HTML5 by FreeHTML5.co" class="img-responsive">
+					</div>
+				</div>
+				<br>
+				<!-- PROJECT -->
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<h2>Style Transfer</h2>
+						<p>I implemeneted the style transfer network described in the paper <a href="#" onclick="window.open('https://arxiv.org/abs/1508.06576'); return false;">A Neural Algorithm of Artistic Style</a> by Gatys, Ecker and Bethge.</p>
+						
+						<p>The basic premise is to take two existing images - typically one image is thought of as the "content" image while the other is thought of as the "style" image -  along with a third image of random noise and incrementally change the pixel values of the noisey image.</p>
+						
+						<p>The goal of continually tweaking the pixel values of the noisey image is to have a resultant new image which is both "close" to the content image and "close" to the style image. Of course, here images being "close" to each other simply means that they minimize some predefined cost/objective function.</p>
+						
+						<p>Specifically, in this setting of style transfer, we feed each of the three images (content, style and noise) though a pretrained Convolutional Neural Network (CNN) - in this case we used the VGG16 network trained on ImageNet data, and use the output values of each layer to measure how close the images are to each other.</p>
+
+						<p>Loosely speaking, we say that the the noise image is close to the content image if the outputs of the convolutional layers earlier on in the network agree, whereas we say that the noise image and the style image are close if the outputs of all the convolutional layers agree. Here when we talk about outputs of the convolutional layers, we really mean the outputs of the convolutional layers found immediately before the pooling layers. </p>
+
+						<p> The images below (mobile)/to the right(desktop) show an example of style tansfer in action. My girlfriend is a very talented illustrator/graphic designer. Our anniversary was around the corner and in addition to a nice dinner and some gifts I wanted to give her something more personal, and handful of style transfered images of the two of us blended with some of <a href="#" onclick="window.open('https://www.kelsey-byrne.com/'); return false;">her artwork</a> seemed like just the thing! In the process I was able to not only give her a more personal gift, but learned some new machine learning concepts along the way! Win-win :)</p>
+
+						<p>Here is a <a href="https://github.com/andrewrosss/style_transfer">link</a> to the code I used to make this happen.</p>
+
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<figure>
+							<img src="images/cliff.jpg" alt="content image" class="img-responsive">
+							<figcaption>Content Image</figcaption>
+						</figure>
+						<br>
+						<figure>
+							<img src="images/kelsey_byrne_thesis6.jpg" alt="style image" class="img-responsive">
+							<figcaption>Style Image</figcaption>
+						</figure>
+						<br>
+						<figure>
+							<img src="images/blended_cliff_2_2.png" alt="blended image" class="img-responsive">
+							<figcaption>Blended Image</figcaption>
+						</figure>
+					</div>
+				</div>
+				<!-- <br>
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<img src="images/blended_cliff_2_2.png" alt="style transfer example" class="img-responsive">
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<img src="images/blended_cliff_2_2.png" alt="style transfer example" class="img-responsive">
+					</div>
+				</div> -->
+				<br>
+				<!-- PROJECT -->
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<h2>Deep Convolutional GAN</h2>
+						<p>DESCRIPTION</p>
 						</ul>
 					</div>
-					<div class="col-md-7">
+					<div class="col-sm-12 col-md-6">
+						<img src="images/hero_1.jpg" alt="Free HTML5 by FreeHTML5.co" class="img-responsive">
+					</div>
+				</div>
+				<br>
+				<!-- PROJECT -->
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<h2>Language Translation</h2>
+						<p>DESCRIPTION</p>
+						</ul>
+					</div>
+					<div class="col-sm-12 col-md-6">
 						<img src="images/hero_1.jpg" alt="Free HTML5 by FreeHTML5.co" class="img-responsive">
 					</div>
 				</div>
@@ -118,14 +205,14 @@
 		</div>
 
 		<!-- TEXT ON IMAGE -->
-		<div class="fh5co-parallax" style="background-image: url(images/hero_2.jpg);" data-stellar-background-ratio="0.5">
+		<div class="fh5co-parallax" style="background-image: url(images/graph.jpg);background-position: center;">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
 						<div class="fh5co-intro fh5co-table-cell">
-							<h1 class="text-center">Simple yet elegant</h1>
-							<p>Made with love by the fine folks at <a href="http://freehtml5.co">FreeHTML5.co</a></p>
+							<!-- <h1 class="text-center">Simple yet elegant</h1>
+							<p>Made with love by the fine folks at <a href="http://freehtml5.co">FreeHTML5.co</a></p> -->
 						</div>
 					</div>
 				</div>
@@ -133,7 +220,7 @@
 		</div>
 
 		<!-- PROJECT DISCRIPTION and LINK -->
-		<div class="fh5co-section">
+		<!-- <div class="fh5co-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-5 col-md-push-7">
@@ -151,10 +238,10 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- TEXT ON IMAGE -->
-		<div class="fh5co-parallax" style="background-image: url(images/hero_3.jpg);" data-stellar-background-ratio="0.5">
+		<!-- <div class="fh5co-parallax" style="background-image: url(images/hero_3.jpg);" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
@@ -166,10 +253,10 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- PROJECT DISCRIPTION and LINK -->
-		<div class="fh5co-section">
+		<!-- <div class="fh5co-section">
 			<div class="container">
 
 				<div class="row">
@@ -191,7 +278,7 @@
 				</div>
 
 			</div>
-		</div>
+		</div> -->
 
 	</div> <!-- END fh5co-wrap -->
 
