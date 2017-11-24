@@ -184,6 +184,61 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 2px solid #fff;
 }
 
+#fh5co-header-contact nav li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline;
+}
+#fh5co-header-contact nav {
+  text-align: center;
+}
+#fh5co-header-contact nav ul {
+  padding: 0;
+  margin: 0;
+}
+#fh5co-header-contact nav li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline;
+}
+#fh5co-header-contact nav li a {
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+#fh5co-header-contact nav li a span {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  border-bottom: 2px solid transparent;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-header-contact nav li a {
+    padding: 10px 2px;
+  }
+}
+#fh5co-header-contact nav li a:hover {
+  color: black;
+}
+#fh5co-header-contact nav li a:hover span {
+  border-bottom: 2px solid #3c3c3c;
+}
+#fh5co-header-contact nav li.fh5co-active-contact a {
+  color: #3c3c3c;
+}
+#fh5co-header-contact nav li.fh5co-active-contact a span {
+  border-bottom: 2px solid #3c3c3c;
+}
+
 .fh5co-table,
 .fh5co-table-cell,
 .fh5co-hero,
