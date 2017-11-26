@@ -264,12 +264,12 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
-/*#about-nav li a span {
+#about-nav li a span {
   padding: 0;
   margin: 0;
-}*/
+}
 
-#about-nav li:hover, a:hover {
+#about-nav li:hover, #about-nav a:hover {
   background-color: #52d3aa;
   color: #333;
 }
