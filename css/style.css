@@ -239,6 +239,60 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 2px solid #3c3c3c;
 }
 
+#about-nav {
+  z-index: 1000;
+}
+
+#about-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  overflow: visible !important;
+  text-align: center;
+  line-height: 1.2;
+}
+
+#about-nav li {
+  display: inline;
+  padding: 1em 0 1em 0;
+}
+
+#about-nav li a {
+  text-decoration: none;
+  padding: 1em;
+  display: inline-block;
+}
+
+/*#about-nav li a span {
+  padding: 0;
+  margin: 0;
+}*/
+
+#about-nav li:hover, a:hover {
+  background-color: #52d3aa;
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  #about-nav ul {
+    padding: 0;
+  }
+  #about-nav li {
+    display: list-item;
+    padding: 0;
+  }
+  #about-nav li a span {
+    padding: 0;
+    margin: 0;
+  }
+  #about-nav li a {
+    display: block;
+  }
+}
+
+
+
 .fh5co-table,
 .fh5co-table-cell,
 .fh5co-hero,
@@ -313,12 +367,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fh5co-section {
-  padding: 5em 0;
+  padding: 0 0 5em 0;
 }
 
 @media screen and (max-width: 768px) {
   .fh5co-section {
-    padding: 3em 0;
+    padding: 0 0 3em 0;
   }
 }
 
