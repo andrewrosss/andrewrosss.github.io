@@ -270,8 +270,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #about-nav li:hover, #about-nav a:hover {
-  background-color: #52d3aa;
-  color: #333;
+  /*background-color: #52d3aa;
+  color: #333;*/
 }
 
 @media screen and (max-width: 768px) {
