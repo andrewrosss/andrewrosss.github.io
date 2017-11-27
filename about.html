@@ -296,7 +296,7 @@
 		// document.querySelector('#alec').scrollIntoView({behavior: 'smooth'});
 		$('a[href*=#]').click(function(event){
 		    $('html, body').animate({
-		        scrollTop: $( $.attr(this, 'href') ).offset().top
+		        scrollTop: $( $.attr(this, 'href') ).offset().top - 20
 		    }, 500);
 		    event.preventDefault();
 		});

@@ -94,16 +94,6 @@
 					</div>
 				</div>
 			</div>
-			<!-- BOOKMARKS - if there are enough projects -->
-			<!-- <div class="container">
-				<ul id="projects_menu" style="text-align:center;">
-					<li><a href="index.html"><span>Home</span></a></li>
-					<li><a href="services.html"><span>Projects</span></a></li>
-					<li><a href="teaching.html"><span>Teaching</span></a></li>
-					<li><a href="about.html"><span>About</span></a></li>
-					<li><a href="contact.html"><span>Contact</span></a></li>
-				</ul>
-			</div> -->
 		</div>
 
 		<!-- PROJECT DISCRIPTION and LINK -->
@@ -348,7 +338,7 @@
 		// document.querySelector('#alec').scrollIntoView({behavior: 'smooth'});
 		$('a[href*=#]').click(function(event){
 		    $('html, body').animate({
-		        scrollTop: $( $.attr(this, 'href') ).offset().top
+		        scrollTop: $( $.attr(this, 'href') ).offset().top - 20
 		    }, 500);
 		    event.preventDefault();
 		});
