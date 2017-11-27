@@ -81,16 +81,15 @@
 		</header>
 
 		<!-- TEXT ON IMAGE -->
-		<div class="fh5co-hero" style="background-image: url(images/graph.jpg);background-position: center;">
+		<div class="fh5co-hero" style="background-image: url(images/graph.jpg);background-position: center; height: 500px;">
 			<!-- data-stellar-background-ratio="0.5" -->
-			<!-- <div class="overlay"></div> -->
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-push-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
-						<div class="fh5co-intro fh5co-table-cell">
+			<div class="overlay"></div>
+			<div class="container" style="height: 500px;">
+				<div class="row" style="height: 500px;">
+					<div class="col-md-8 col-md-push-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table" style="height: 500px;">
+						<div class="fh5co-intro fh5co-table-cell" style="height: 500px;">
 							<h1 class="text-center">Machine Learning Projects</h1>
-							<p>These are some of the interesting ML projects that I've worked on </br>
-							All of my projects can be found on <a href="https://github.com/andrewrosss">GitHub</a></p>
+							<p>These are some of the interesting ML projects that I've worked on. All of my projects can be found on <a href="https://github.com/andrewrosss">GitHub</a></p>
 						</div>
 					</div>
 				</div>
@@ -108,10 +107,21 @@
 		</div>
 
 		<!-- PROJECT DISCRIPTION and LINK -->
-		<div class="fh5co-section">
-			<div class="container">
+		<div class="fh5co-section" style="padding-top: 0;">
+			<div class="container" style="padding: 0; margin: 0; width: auto;">
+				<div id="about-nav">
+					<ul><!-- 
+						 --><li><a href="#oracle"><span>Oracle - Web App</span></a></li><!-- 
+						 --><li><a href="#caps"><span>Caps Net</span></a></li><!-- 
+						 --><li><a href="#style"><span>Style Transfer</span></a></li><!-- 
+						 --><li><a href="#dcgan"><span>DC GAN</span></a></li><!-- 
+						 --><li><a href="#translation"><span>Translation</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="container" style="padding-top: 2em;">
 				<!-- PROJECT -->
-				<div class="row">
+				<div class="row" id="oracle">
 					<div class="col-sm-12 col-md-6">
 						<h2><a href="#" onclick="window.open('https://markoracle.herokuapp.com'); return false;">Oracle &mdash; Mark Prediction Web App</a></h2>
 						<p>(IN PROGRESS)</p>
@@ -122,7 +132,7 @@
 				</div>
 				<br>
 				<!-- PORJECT -->
-				<div class="row">
+				<div class="row" id="caps">
 					<div class="col-md-6">
 						<h2><a href="#" onclick="window.open('https://github.com/alecross89/CapsuleNetwork'); return false;">Capsule Neural network</a></h2>
 						<p>(IN PROGRESS)</p>
@@ -133,7 +143,7 @@
 				</div>
 				<br>
 				<!-- PROJECT -->
-				<div class="row">
+				<div class="row" id="style">
 					<div class="col-sm-12 col-md-6">
 						<h2><a href="#" onclick="window.open('https://github.com/andrewrosss/style_transfer'); return false;">Style Transfer</a></h2>
 						<p>I implemeneted the style transfer network described in the paper <a href="#" onclick="window.open('https://arxiv.org/abs/1508.06576'); return false;">A Neural Algorithm of Artistic Style</a> by Gatys, Ecker and Bethge.</p>
@@ -148,7 +158,7 @@
 
 						<p> The images below (mobile)/to the right(desktop) show an example of style tansfer in action. My girlfriend is a very talented illustrator/graphic designer. Our anniversary was around the corner and in addition to a nice dinner and some gifts I wanted to give her something more personal, and handful of style transfered images of the two of us blended with some of <a href="#" onclick="window.open('https://www.kelsey-byrne.com/'); return false;">her artwork</a> seemed like just the thing! In the process I was able to not only give her a more personal gift, but learned some new machine learning concepts along the way! Win-win :)</p>
 
-						<p>Here is a <a href="https://github.com/andrewrosss/style_transfer">link</a> to the code I used to make this happen.</p>
+						<!-- <p>Here is a <a href="https://github.com/andrewrosss/style_transfer">link</a> to the code I used to make this happen.</p> -->
 
 					</div>
 					<div class="col-sm-12 col-md-6">
@@ -179,7 +189,7 @@
 				</div> -->
 				<br>
 				<!-- PROJECT -->
-				<div class="row">
+				<div class="row" id="dcgan">
 					<div class="col-sm-12 col-md-6">
 						<h2><a href="#" onclick="window.open('https://github.com/andrewrosss/dlnd_project_5'); return false;">Deep Convolutional GAN</a></h2>
 						<p>DESCRIPTION</p>
@@ -191,7 +201,7 @@
 				</div>
 				<br>
 				<!-- PROJECT -->
-				<div class="row">
+				<div class="row" id="translation">
 					<div class="col-sm-12 col-md-6">
 						<h2><a href="#" onclick="window.open('https://github.com/andrewrosss/dlnd_project_4'); return false;">Language Translation</a></h2>
 						<p>DESCRIPTION</p>
@@ -333,6 +343,16 @@
 	<script src="js/jquery.stellar.min.js"></script>
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+	<!-- SMOOTH SCROLLING -->
+	<script>
+		// document.querySelector('#alec').scrollIntoView({behavior: 'smooth'});
+		$('a[href*=#]').click(function(event){
+		    $('html, body').animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top
+		    }, 500);
+		    event.preventDefault();
+		});
+	</script>
 
 	</body>
 </html>

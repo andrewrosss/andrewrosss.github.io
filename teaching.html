@@ -80,14 +80,14 @@
 			</div>
 		</header>
 
-		<div class="fh5co-hero" style="background-image: url(images/stmikes.jpg); background-position: center;">
+		<div class="fh5co-hero" style="background-image: url(images/stmikes.jpg); background-position: center; height: 500px;">
 			<div class="overlay_courses"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
-						<div class="fh5co-intro fh5co-table-cell">
+			<div class="container" style="height: 500px;">
+				<div class="row" style="height: 500px;">
+					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table" style="height: 500px;">
+						<div class="fh5co-intro fh5co-table-cell" style="height: 500px;">
 						<!-- style="background-color: rgba(0, 0, 0, 0.3);" -->
-							<h1 class="text-center">Current Courses</h1>
+							<h1 class="text-center">Courses</h1>
 							<p>I am currently a teaching assistant at the University of Toronto</br>
 							Below are some materials for courses currently underway</p>
 						</div>
@@ -97,9 +97,17 @@
 		</div>
 
 		<!-- CURRENT COURSES -->
-		<div class="fh5co-section">
-			<div class="container">
-				<div class="row">
+		<div class="fh5co-section" style="padding-top: 0;">
+			<div class="container" style="padding: 0; margin: 0; width: auto;">
+				<div id="about-nav">
+					<ul><!-- 
+						 --><li><a href="#current"><span>Current Courses</span></a></li><!-- 
+						 --><li><a href="#past"><span>Past Courses</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="container" style="padding-top: 2em;">
+				<div class="row" id="current">
 					<!-- <h3 class='text-center'> Current Courses</h3> -->
 					<div class="col-md-6">
 						<h2><a href="#" onclick="window.open('https://mcs.utm.utoronto.ca/~rennetal/MAT344_F17.html'); return false;">MAT344 - Introduction to Combinatorics</a></h2>
@@ -194,7 +202,7 @@
 
 		<div class="fh5co-section">
 			<div class="container">
-				<div class="row">
+				<div class="row" id="past">
 					<div class="col-sm-12 col-md-6">
 						<h3>University of Toronto (Summer 2017)</h3>
 						<ul class="list-unstyled"> <!-- class="fh5co-check" -->
@@ -328,6 +336,16 @@
 	<script src="js/jquery.stellar.min.js"></script>
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+	<!-- SMOOTH SCROLLING -->
+	<script>
+		// document.querySelector('#alec').scrollIntoView({behavior: 'smooth'});
+		$('a[href*=#]').click(function(event){
+		    $('html, body').animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top - 40
+		    }, 500);
+		    event.preventDefault();
+		});
+	</script>
 
 	</body>
 </html>
