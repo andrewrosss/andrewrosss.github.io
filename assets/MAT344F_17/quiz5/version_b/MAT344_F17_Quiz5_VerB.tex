@@ -1,0 +1,135 @@
+%%%%%%%%%%%%
+%The nice Euler/mathpazo font setup is from http://tex.stackexchange.com/questions/59702/suggest-a-nice-font-family-for-my-basic-latex-template-text-and-math/97128#97128
+%%%%%%%%%%%%
+\documentclass[twoside]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsfonts}
+\usepackage[tracking]{microtype}
+\usepackage[sc,osf]{mathpazo}   % With old-style figures and real smallcaps.
+\usepackage{cancel} %for \cancel (strikethrough)
+\linespread{1.1}              % Palatino needs a little more leading
+% Euler for math and numbers
+\usepackage[euler-digits,small]{eulervm}
+%\AtBeginDocument{\renewcommand{\hbar}{\hslash}} not sure what this is for
+
+\usepackage{ntheorem} %new theorem
+% A new theorem style to make theorem description non-italic, to match the Euler math font.
+\makeatletter
+\newtheoremstyle{mystyle}
+   {\item[\hskip\labelsep \theorem@headerfont ##1\ ##2\theorem@separator]}% 
+   {\item[\hskip\labelsep \theorem@headerfont ##1\ ##2\ \textit{(##3)}\theorem@separator]}
+\makeatother
+\theoremstyle{mystyle}
+\theoremheaderfont{\scshape}
+\theorembodyfont{\upshape}
+\newtheorem{ex}{Exercise}
+\newtheorem{exam}{Example}
+\newtheorem{fact}{Fact}
+\newtheorem{defn}{Definition}
+\newtheorem{thm}{Theorem}
+\newtheorem{quest}{Question}
+
+%%%%%%%%%
+%BEGIN SYMBOL MACROS
+%%%%%%%%%
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\renewcommand{\H}{\mathcal{H}}
+\newcommand{\I}{\mathcal{I}}
+\newcommand{\K}{\mathcal{K}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\N}{\mathcal{N}}
+\let\nothing\O
+\renewcommand{\O}{\mathcal{O}}
+\renewcommand{\P}{\mathcal{P}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\R}{\mathcal{R}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\V}{\mathcal{V}}
+\newcommand{\W}{\mathcal{W}}
+\newcommand{\Z}{\mathcal{Z}}
+
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\KK}{\mathbb{K}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+%%%%%%%%%
+%END SYMBOL MACROS
+%%%%%%%%%
+
+\usepackage{amsmath}
+%\usepackage{hyperref} this was causing trouble - maybe it needs to be above/below a particular "\usepackage" statement...
+\usepackage{graphicx} %For \includegraphics
+\usepackage{multicol} %For \begin{multicols}{2}etc
+\usepackage{enumerate} %For \begin{enumerate}[(a)] etc.
+\usepackage{vwcol} %For \begin{vwcol}[widths={0.6,0.4}, sep=.8cm, justify=flush,rule=0pt,indent=1em]
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\lhead{\large \sc{Mat344}}
+\chead{\Large \textbf{\sc{Quiz 5, TUT102}}}
+\rhead{Nov 29th, 2017}
+\cfoot{}
+%\lfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+%\rfoot{\texttt{www.math.toronto.edu/rennetad}}
+
+\usepackage[myheadings]{fullpage}
+
+\pagestyle{fancyplain}
+\begin{document}
+
+\begin{center}
+\section*{\sc{5 Points Available}}
+\vspace{0.1in}
+\large \underline{\textsc{Instructions}}
+\vspace{0.1in}
+\normalsize
+
+Please write your \textbf{Name and Student Number} at the top of this page.\\
+
+\textbf{Remember:} you have to write quizzes in your \textbf{registered} tutorial.
+\vspace{0.1in}
+\end{center}
+
+
+\begin{center}
+%\subsection*{\sc{\underline{Questions}}}
+\textit{Make sure to show as many steps of your work as possible, justify as much and annotate any interesting steps or features of your work.  \textbf{Do not just give the final answer.}} \\
+%\vspace{0.1in}
+%\textbf{Where possible, use - but do not simplify - terms like "$P(n,r)$", "$\binom{n}{k}$",  "$P(n;r_1,...,r_k)$" etc.}
+\end{center}
+        
+\begin{defn}\mbox{}\\
+
+\noindent A simple graph $G$ is called \textbf{critically $k$-chromatic} if $G$ is $k$-colourable, but not $k-1$-colourable (i.e. $\chi(G) = k$) and for every vertex $v$ in $G$, the graph $G-\{v\}$ is $k-1$-colourable.\\
+
+\noindent \textit{(The idea is that $G$ requires $k$ colours, but take away any vertex and the remaining graph can be $k-1$-coloured.)}
+\end{defn}
+
+\begin{quest}\mbox{}\\
+
+\noindent Show that for every positive integer $k$, every \textbf{critically $k$-chromatic} simple graph $G$ has no vertex with degree strictly less than $k-1$.\\
+
+\begin{enumerate}
+\item[{\bfseries Solution:}]
+For contradiction, let $G$ be critically $k$-chromatic, and suppose that a vertex $v \in G$ has $\deg(v) \le k -2$. By definition $H := G - \{v\}$ is $(k-1)$-colourable; consider one of these $(k-1)$-colourings of $H$. Use this colouring of $H$ to obtain a colouring of all the vertices of $G$, \emph{except} for the vertex $v$. (We will try to colour this vertex in a moment.) \\
+
+Since $\deg(v) \le k-2$, this implies that $v$ has at most $k-2$ neighbours, this further implies that the neighbours of $v$ use up \emph{at most} $k-2$ out of the $k-1$ available colours, thus among the neighbours of $v$ there is at least one unused colour; colour $v$ with one of these unused colours and we have a $(k-1)$-colouring of $G$, but $G$ is not $(k-1)$-colourable - a contradiction.
+
+\end{enumerate}
+\end{quest}
+
+%Suppose that $G$ had a vertex $v$ of degree $\leq k-2$.  Then $G-\{v\}$ is $k-1$-colourable.  So consider such a colouring.  Notice that in $G$, $v$ has fewer than $k-2$ neighbours, so our colouring has used at most $k-2$ colours to colour these neighbours.  Therefore, we can use one of the remaining colours to colour $v$ in $G$, obtaining a colouring of $G$ with $k-1$ or fewer colours, contradicting $\chi(G) = k$.
+
+
+
+\end{document}
+\setlength{\parindent}{0pt}
