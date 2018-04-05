@@ -52,7 +52,7 @@
 		    this.prev = function(imgId) {
 		    var img = document.getElementById(imgId);
 		    this.i--;
-		    if (this.i <= 0)
+		    if (this.i < 0)
 		        this.i = images.length -1;
 		        img.src = images[this.i];
 		    }
