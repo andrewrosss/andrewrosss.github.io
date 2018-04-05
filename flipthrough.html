@@ -26,6 +26,27 @@
 		    display: block;
 		    margin: 0 auto;
 		}
+		.button {
+		    background-color: powderblue;/*#4CAF50;*/ /* Green */
+		    border: none;
+		    color: white;
+		    padding: 15px 32px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    margin: 4px 2px;
+		    cursor: pointer;
+		    border-radius: 8px;
+		}
+		.button5 {
+		    background-color: powderblue;/*white;*/
+		    color: #555555;
+		    border: 2px solid #555555;
+		}
+		input[type=button] {
+		    width: 20em;  height: 6em;
+		}
 		</style>
 </head>
 <body>
@@ -34,8 +55,14 @@
 			<img class='center' id='container' src="images/pp_images/none.png">
 		</div>
 		<div id='wrapper'>
-			<input type='button' value='next' onclick='ic1.next("container")' />
-			<input type='button' value='prev' onclick='ic1.prev("container")' />
+			<!-- <input type='button' value='next' onclick='ic1.next("container")' />
+			<input type='button' value='prev' onclick='ic1.prev("container")' /> -->
+			<button class="button button5" onclick='ic1.next("container")'>
+				Next
+			</button>
+			<button class="button button5" onclick='ic1.prev("container")'>
+				Prev
+			</button>
 		</div>
 	</div>
 	<script type="text/javascript">
