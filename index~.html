@@ -37,7 +37,7 @@
 	<div class="container container-body">
 		<div class="row">
 
-			<!-- Photo + Contact Details -->
+			<!-- LEFT COLUMN -->
 			<div class="col-sm-3">
 				<div class="section section-left">
 					<img class="head-shot" src="images/head_shot_2.jpg">
@@ -62,73 +62,118 @@
 				</div>
 			</div>
 
+			<!-- RIGHT COLUMN -->
 			<div class="col-sm-9">
-				<div class="section">
-					<h2><span class="glyphicon glyphicon-user"></span>About</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-				</div>
+				<div class="panel-group" id="accordion">
+					<!-- ABOUT -->
+				    <div class="panel panel-default">
 
-				<!-- Experience -->
-				<div class="section">
-					<h2><span class="glyphicon glyphicon-briefcase"></span>Experience</h2>
-					<div class="exp-entry">
-						<h4 class="exp-institution">Performance Phenomics</h4>
-						<h4 class="from-to">From Then - To Now</h4>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. 
-						</p>
-					</div>
+				    	<!-- PANEL - HEADING -->
+				    	<a data-toggle="collapse" href="#collapse1">
+					      	<div class="panel-heading">
+					        	<h2 class="panel-title">
+					          			<span class="glyphicon glyphicon-user"></span>About
+					        	</h2>
+				      	</div>
+				      	</a>
+				      	<!-- PANEL - BODY -->
+				    	<div id="collapse1" class="panel-collapse collapse in">
+				        	<div class="panel-body">
+				        		<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+				        	</div>
+				    	</div>
+					</div> <!-- end panel -->
+				    
+				    <!-- EXPERIENCE -->
+				    <div class="panel panel-default">
 
-					<div class="exp-entry">
-						<h4 class="exp-institution">University of Toronto</h4>
-						<h4 class="from-to">From Then - To Now</h4>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. 
-						</p>
-					</div>
-				</div>
+				    	<!-- PANEL - HEADING -->
+				      	<div class="panel-heading">
+				        	<h4 class="panel-title">
+				          		<a data-toggle="collapse" href="#collapse2">
+				          			<span class="glyphicon glyphicon-briefcase"></span>Experience
+				          		</a>
+				        	</h4>
+				      	</div>
 
-				<!-- Education -->
-				<div class="section">
-					<h2><span class="glyphicon glyphicon-education"></span>Education</h2>
-					<div class="exp-entry">
-						<h4 class="exp-institution">University of Toronto (MSc)</h4>
-						<h4 class="from-to">From Then - To Now</h4>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. 
-						</p>
-					</div>
+				      	<!-- PANEL - BODY -->
+				    	<div id="collapse2" class="panel-collapse collapse">
+				        	<div class="panel-body">
+				        		<div class="exp-entry">
+									<h4 class="exp-institution">Performance Phenomics</h4>
+									<h4 class="from-to">From Then - To Now</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. 
+									</p>
+								</div>
 
-					<div class="exp-entry">
-						<h4 class="exp-institution">University of Toronto (BSc)</h4>
-						<h4 class="from-to">From Then - To Now</h4>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. 
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+								<div class="exp-entry">
+									<h4 class="exp-institution">University of Toronto</h4>
+									<h4 class="from-to">From Then - To Now</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. 
+									</p>
+								</div>
+				        	</div>
+				      	</div>
+				    </div> <!-- end panel -->
+
+				    <!-- EDUCATION -->
+				    <div class="panel panel-default">
+
+				    	<!-- PANEL - HEADING -->
+					    <div class="panel-heading">
+				        	<h4 class="panel-title">
+				          		<a data-toggle="collapse" href="#collapse3">
+				          			<span class="glyphicon glyphicon-education"></span>Education
+				          		</a>
+				        	</h4>
+				      	</div>
+				      	
+				      	<!-- PANEL - BODY -->
+				      	<div id="collapse3" class="panel-collapse collapse">
+				        	<div class="panel-body">
+				        		<div class="exp-entry">
+									<h4 class="exp-institution">University of Toronto (MSc)</h4>
+									<h4 class="from-to">From Then - To Now</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. 
+									</p>
+								</div>
+
+								<div class="exp-entry">
+									<h4 class="exp-institution">University of Toronto (BSc)</h4>
+									<h4 class="from-to">From Then - To Now</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. 
+									</p>
+								</div>
+				        	</div>
+				      	</div>
+				    </div> <!-- end panel -->
+				</div> <!-- end panel-group -->
+			</div> <!-- end col-sm-9 -->
+		</div> <!-- end row -->
+	</div> <!-- end container container-body -->
 
 	<footer>
 		<div class="container container-footer">
@@ -176,6 +221,13 @@
 		    var parentwidth = $(".col-sm-3").width();
 		   $(".section-left").width(parentwidth-16);
 		});
+
+		// $( document ).ready(function() {
+		// 	var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+		// 	var head = $(".container-header").height()
+		// 	var foot = $(".container-footer").height()
+		// 	$(".row").height(h - head - foot - 16)
+		// });
 	</script>
 </body>
 </html>
