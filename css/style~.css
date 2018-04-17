@@ -124,6 +124,7 @@ header nav{
 
 .row{
 	padding-top: 16px;
+	padding-bottom: 104px;
 }
 
 img.head-shot{
@@ -151,7 +152,30 @@ img.head-shot{
 
 .panel-heading{
 	padding: 16px;
+	background-color: #f5f5f5;
 }
+
+.panel-heading-link{
+	color: #4e4e4e;
+}
+
+
+.panel-heading-link{
+color: #4e4e4e;
+}
+.panel-heading-link:hover{
+color: #4e4e4e;
+}
+.panel-heading-linka:active{
+color: #4e4e4e;
+} 
+.panel-heading-link:visited{
+color: #4e4e4e;
+}
+.panel-heading-link:focus {
+    color: #4e4e4e;
+}
+
 
 .panel-title{
 	font-size: 30px;
@@ -166,6 +190,11 @@ footer{
 	text-align: center;
 	color: #f1f1f1;
 	background-color: #14273f;
+
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+
 }
 
 footer a{
@@ -208,6 +237,10 @@ footer p{
 @media only screen and (max-width: 768px) {
     .section-left{
 		position: relative;
+	}
+
+	.row{
+		padding-bottom: 94px;
 	}
 
 	footer a{
