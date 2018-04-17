@@ -26,11 +26,12 @@
 			<nav>
 				<ul>
 					<li><a href="index~.html">Home</a></li>
-					<li><a href="resume~.html">Resume</a></li>
+					<!-- <li><a href="resume~.html">Resume</a></li> -->
 					<li><a href="projects~.html">Projects</a></li>
 				</ul>
 			</nav>
 		</div>
+
 	</header>
 
 	<div class="container container-body">
@@ -136,28 +137,45 @@
 			</p>
 			<ul>
 				<li>
-					<a href="#" onclick="window.open('https://www.linkedin.com/in/andrew-ross-47b795144/'); return false;"><i class="icon-linkedin"></i> <span>Andrew Ross</span></a>
+					<a href="#" onclick="window.open('https://www.linkedin.com/in/andrew-ross-47b795144/'); return false;"><i class="icon-linkedin"></i> <!-- <span>Andrew Ross</span> --></a>
 				</li>
 				<li>
-					<a href="#" onclick="window.open('https://github.com/andrewrosss'); return false;"><i class="icon-github"></i> <span>andrewrosss</span></a>
+					<a href="#" onclick="window.open('https://github.com/andrewrosss'); return false;"><i class="icon-github"></i> <!-- <span>andrewrosss</span> --></a>
 				</li>
 				<li>
-					<a href="#" onclick="window.open('https://github.com/andrewrosss'); return false;"><i class="icon-snapchat"></i> <span>andrewrosss</span></a>
+					<a href="#" onclick="window.open('https://github.com/andrewrosss'); return false;"><i class="icon-snapchat"></i> <!-- <span>andrewrosss</span> --></a>
 				</li>
 				<li>
-					<a href="#" onclick="window.open('https://www.facebook.com/Arosss'); return false;"><i class="icon-facebook"></i> <span>&nbsp;@arosss</span></a>
+					<a href="#" onclick="window.open('https://www.facebook.com/Arosss'); return false;"><i class="icon-facebook"></i> <!-- <span>&nbsp;@arosss</span> --></a>
 				</li>
 				<li>
-					<a href="#" onclick="window.open('https://www.instagram.com/lintstagramm/'); return false;"><i class="icon-instagram"></i> <span>@lintstagramm</span></a>
+					<a href="#" onclick="window.open('https://www.instagram.com/lintstagramm/'); return false;"><i class="icon-instagram"></i> <!-- <span>@lintstagramm</span> --></a>
 				</li>
 				<li>
-					<a href="#" onclick="window.open('https://twitter.com/Andrewrosss'); return false;"><i class="icon-twitter"></i> <span>@andrewrosss</span></a>
+					<a href="#" onclick="window.open('https://twitter.com/Andrewrosss'); return false;"><i class="icon-twitter"></i> <!-- <span>@andrewrosss</span> --></a>
 				</li>
 				<li>
-					<a href="#" onclick="window.open('https://plus.google.com/u/0/106302438894205825127'); return false;"><i class="icon-google"></i> <span>+andrew ross</span></a>
+					<a href="#" onclick="window.open('https://plus.google.com/u/0/106302438894205825127'); return false;"><i class="icon-google"></i> <!-- <span>+andrew ross</span> --></a>
 				</li>
 			</ul>
 		</div>
 	</footer>
+
+	<script type="text/javascript">
+		function adjustWidth() {
+		   var parentwidth = $(".col-sm-3").width();
+		   $(".section-left").width(parentwidth-16);
+		 }
+
+		$(window).resize(
+	     function() {
+	       adjustWidth();
+	     })
+
+		$( document ).ready(function() {
+		    var parentwidth = $(".col-sm-3").width();
+		   $(".section-left").width(parentwidth-16);
+		});
+	</script>
 </body>
 </html>
