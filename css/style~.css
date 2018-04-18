@@ -87,7 +87,7 @@ header nav{
 }
 
 .contact-info{
-	padding: 16px;
+	padding: 0;
 }
 
 .col-sm-3{
@@ -108,8 +108,28 @@ header nav{
 
 .section-left{
 	padding: 0;
-	/*width: inherit;*/
 	position: fixed;
+}
+
+.section-left .panel-group{
+	margin:0;
+}
+
+.section-left .panel {
+	box-shadow: none;
+}
+
+.section-left .panel-group .panel {
+    margin-bottom: 0;
+}
+
+.section-left .panel-heading h4{
+	text-align: center;
+	font-size: 20px;
+}
+
+.section-left .panel-heading a:hover{
+	color: red;/*#4e4e4e;*/
 }
 
 .section h2{
@@ -166,7 +186,7 @@ color: #4e4e4e;
 .panel-heading-link:hover{
 color: #4e4e4e;
 }
-.panel-heading-linka:active{
+.panel-heading-link:active{
 color: #4e4e4e;
 } 
 .panel-heading-link:visited{
